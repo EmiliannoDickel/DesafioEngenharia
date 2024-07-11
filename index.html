@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+
+
+<body>
+    <div class="container">
+        <h2>CADASTRO DE CLIENTES:</h2>
+        <form>
+            <div class="grupo"> 
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" class="form-control" placeholder="Seu Nome" required/>
+            </div>   
+            <div class="grupo">
+                <label for="senha">Senha:</label>
+                <input type="password" class="form-control" required/>
+            </div>
+            <div class="grupo">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" placeholder="@domínio.com" required/>
+            </div>
+            <div class="grupo">
+                <label for="numero">Número</label>
+                <input type="tel" class="form-control" id="senha" name="telefone" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" placeholder="(XX) XXXXX-XXXX" required>
+            </div>
+            <div class="grupo">
+                <label for="data">Data de Nascimento:</label>
+                <input type="date" required>
+            </div>
+            <div class="grupo">
+                <label for="genero">Gênero:</label>
+                <select name="genero" id="genero" required>
+                    <option value="">Selecione...</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Fêminino</option>
+                    <option value="transformers">Transformers</option>
+                    <option value="nao-dizer">Outro</option>
+                </select>
+            </div>
+            <div id="entrada" class="entradacadastro">
+                <div class="entrada-sucesso">
+                  <span class="fechar">&times;</span>
+                  <p>Cadastro concluído</p>
+                </div>
+              </div>
+            
+            <button type="submit" id="btn-cadastro">Cadastrar</button>
+        </form> 
+    </div>
+ 
+<script src="scripts.js"></script>
+
+</body>
+
+</html>
